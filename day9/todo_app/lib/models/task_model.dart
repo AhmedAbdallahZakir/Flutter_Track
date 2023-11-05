@@ -1,6 +1,7 @@
 class Task {
   String nameTask;
-  String decribtion;
+  //String decribtion;
+  bool? isFinished;
 
-  Task({required this.nameTask, required this.decribtion});
+  Task({required this.nameTask, this.isFinished});
 }

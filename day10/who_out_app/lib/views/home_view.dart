@@ -26,10 +26,16 @@ class HomeView extends StatelessWidget {
                 CustomContainer(
                   categryName: 'حيوانات',
                   icon: const Icon(Icons.animation),
+                  callback: () {
+                    Navigator.pushNamed(context, '/add_player');
+                  },
                 ),
                 CustomContainer(
-                  categryName: 'حيوانات',
-                  icon: const Icon(Icons.animation),
+                  categryName: 'ملابس',
+                  icon: const Icon(Icons.close),
+                  callback: () {
+                    Navigator.pushNamed(context, '/add_player');
+                  },
                 ),
               ],
             ),
@@ -37,18 +43,27 @@ class HomeView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CustomContainer(
-                  categryName: 'حيوانات',
-                  icon: const Icon(Icons.animation),
+                  categryName: 'دول',
+                  icon: const Icon(Icons.flag),
+                  callback: () {
+                    Navigator.pushNamed(context, '/sub_country');
+                  },
                 ),
                 CustomContainer(
-                  categryName: 'حيوانات',
-                  icon: const Icon(Icons.animation),
+                  categryName: 'مشاهير',
+                  icon: const Icon(Icons.account_balance),
+                  callback: () {
+                    Navigator.pushNamed(context, '/sub_famous');
+                  },
                 ),
               ],
             ),
             CustomContainer(
-              categryName: 'حيوانات',
-              icon: const Icon(Icons.animation),
+              categryName: 'لاعبين',
+              icon: const Icon(Icons.abc),
+              callback: () {
+                Navigator.pushNamed(context, '/sub_player');
+              },
             ),
           ],
         ),

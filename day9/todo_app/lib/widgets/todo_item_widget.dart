@@ -1,20 +1,18 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
+// import 'package:todo_app/models/task_model.dart';
 
-class ToDoItem extends StatelessWidget {
-  String nameTask;
-  String describtionTask;
+// class ToDoItem extends StatelessWidget {
+//   String name;
+//   bool ;
+//   //Task task  = Task(nameTask: , decribtion:decs );
 
-  ToDoItem({required this.nameTask, required this.describtionTask});
+//   ToDoItem({required this.name});
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 100,
-      width: double.infinity,
-      child: ListTile(
-        title: Text(nameTask),
-        subtitle: Text(describtionTask),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ListTile(
+//       title: Text(name),
+//       subtitle: Text(decs),
+//     );
+//   }
+// }
